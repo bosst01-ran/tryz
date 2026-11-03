@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packet Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="game">
+    <h1>PACKET MEMORY</h1>
+
+    <div class="stats">
+      <div>ROUND <span id="round">1</span></div>
+      <div>MISTAKES <span id="mistakes">0/3</span></div>
+    </div>
+
+    <h2 id="instruction">PACKET MEMORY GAME</h2>
+
+    <div class="display">
+      <div id="number">READY</div>
+      <div id="shown">★</div>
+      <div id="progress" class="progress"></div>
+    </div>
+
+    <div class="slots" id="slots">
+      <div class="slot"></div>
+      <div class="slot"></div>
+    </div>
+
+    <div class="packets" id="packets"></div>
+
+    <p id="message">Press START to play.</p>
+
+    <div class="actions">
+        <button id="start">START</button>
+        <button id="reset">RESET</button>
+        <button id="undo">UNDO</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

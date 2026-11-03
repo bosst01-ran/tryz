@@ -1,0 +1,187 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #090a0f;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  width: min(94%, 480px);
+  text-align: center;
+  padding: 25px 15px;
+}
+
+h1 {
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  color: #aaa;
+  margin: 25px 0;
+  font-size: 13px;
+}
+
+.stats span {
+  color: #ffc400;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 17px;
+  min-height: 24px;
+  margin-bottom: 25px;
+}
+
+.display {
+  width: 230px;
+  height: 220px;
+  margin: auto;
+  border: 1px solid #444650;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+#number {
+  color: #aaa;
+  font-size: 15px;
+}
+
+#shown {
+  color: #ffc400;
+  font-size: 85px;
+}
+
+.progress {
+  display: flex;
+  gap: 7px;
+}
+
+.progress span {
+  width: 24px;
+  height: 7px;
+  background: #30323a;
+  border-radius: 10px;
+}
+
+.progress span.active {
+  background: #ffc400;
+}
+
+.slots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.slot {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #454650;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  color: #ffc400;
+}
+
+.slot-number {
+  color: #aaa;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.slot-shape {
+  font-size: 35px;
+  line-height: 1.1;
+}
+
+.slot.filled {
+  border-color: #ffc400;
+}
+
+.packets {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.packet {
+  width: 65px;
+  height: 65px;
+  border: 1px solid #444650;
+  border-radius: 8px;
+  background: #14151c;
+  color: #ffc400;
+  font-size: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.packet small {
+  position: absolute;
+  bottom: 4px;
+  right: 7px;
+  color: #aaa;
+  font-size: 11px;
+}
+
+.packet:hover {
+  border-color: #ffc400;
+}
+
+#message {
+  min-height: 22px;
+  color: #aaa;
+  margin: 25px 0;
+}
+
+button {
+  padding: 12px 28px;
+  margin: 5px;
+  background: #ffc400;
+  color: #111;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+#undo {
+  background: #292b34;
+  color: white;
+}
+
+#reset {
+  background: #c0392b;
+  color: white;
+}
+
+#start {
+  background: #ffc400;
+  color: #111;
+}
